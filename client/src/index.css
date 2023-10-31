@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Relative';
+  src: url('./assets/font/RelativeHandwritten/Relative-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,
+body,
+#root{
+  height: 100%;
+  background: #4E46B4;
+  font-family: 'Oswald', sans-serif;
+}
+
+@layer components{
+  .container {
+    @apply max-w-[1440px] w-full m-auto px-[10px] minsm:px-[15px];
+  }
+}
